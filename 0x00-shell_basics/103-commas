@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -1a | awk '{print} END printf "\n"{}' | sort -t . -k 1.1,1.9 -k 2 | tr '\n' ',' | sed 's/.$/\n/'
